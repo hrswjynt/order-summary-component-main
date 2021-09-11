@@ -27,6 +27,7 @@
 			.attribution {
 				font-size: 11px;
 				text-align: center;
+				margin: 1rem;
 			}
 			.attribution a {
 				color: hsl(228, 45%, 44%);
@@ -35,30 +36,33 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>Order Summary</h1>
+			<img src="./images/illustration-hero.svg" class="hero" />
+			<div class="content">
+				<h1>Order Summary</h1>
 
-			<p>
-				You can now listen to millions of songs, audiobooks, and podcasts on any
-				device anywhere you like!
-			</p>
+				<p>
+					You can now listen to millions of songs, audiobooks, and podcasts on
+					any device anywhere you like!
+				</p>
 
-			<div class="plan">
-				<img src="./images/icon-music.svg" class="plan__icon" />
-				<div class="plan_info">
-					<h2 class="title">Annual Plan</h2>
-					<p class="desc">$59.99/year</p>
-					<a href="#" class="change">Change</a>
+				<div class="plan">
+					<img class="plan__icon" src="./images/icon-music.svg" />
+					<div class="plan__info">
+						<h2 class="title">Annual Plan</h2>
+						<p class="desc">$59.99/year</p>
+					</div>
+					<a class="plan__select" href="#">Change</a>
 				</div>
+				<button class="order">Proceed to Payment</button><br />
+				<a class="cancel" href="#">Cancel Order</a>
 			</div>
-			<button class="order">Proceed to Payment</button><br />
-			<button class="cancel">Cancel Order</button>
 		</div>
 
 		<div class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+			>. Coded by <a href="https://github.com/hrswjynt">Haris Wijayanto</a>.
 		</div>
 	</body>
 </html>

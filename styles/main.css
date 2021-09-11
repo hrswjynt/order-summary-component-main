@@ -7,11 +7,26 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #e0e8ff;
   background-image: url(../images/pattern-background-mobile.svg);
-  background-size: cover;
+  background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
+  height: 100vh;
+  min-width: 360px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -23,7 +38,178 @@ body {
 @media only screen and (min-width: 900px) {
   body {
     background-image: url(../images/pattern-background-desktop.svg);
-    background-position: center;
+    background-position: top;
   }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 1.5rem;
+  max-width: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .hero {
+  width: 100%;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  max-width: 360px;
+}
+
+.container .content h1 {
+  color: #1f2f56;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0.75rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .container .content h1 {
+    font-size: 1.75rem;
+  }
+}
+
+.container .content p {
+  color: #7280a7;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  margin: 0.5 0 0.75rem 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .container .content p {
+    font-size: 1.125rem;
+  }
+}
+
+.container .content .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f7ff;
+  border-radius: 0.625rem;
+  padding: 1rem;
+  margin: 0.75rem 0;
+}
+
+.container .content .plan__icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 50px;
+}
+
+.container .content .plan__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-right: 2rem;
+}
+
+.container .content .plan__info .title,
+.container .content .plan__info .desc {
+  font-size: 0.875rem;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .container .content .plan__info .title,
+  .container .content .plan__info .desc {
+    font-size: 1rem;
+  }
+}
+
+.container .content .plan__info .title {
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+.container .content .plan__select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #3829e0;
+  text-align: right;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.container .content .plan__select:active {
+  opacity: 0.75;
+}
+
+@media only screen and (min-width: 600px) {
+  .container .content .plan__select {
+    font-size: 1rem;
+  }
+}
+
+.container .content .order {
+  background-color: #3829e0;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.container .content .order:active {
+  opacity: 0.75;
+}
+
+.container .content .cancel {
+  color: #7280a7;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+.container .content .cancel:active {
+  color: #1f2f56;
 }
 /*# sourceMappingURL=main.css.map */
